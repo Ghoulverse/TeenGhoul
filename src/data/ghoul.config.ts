@@ -178,15 +178,6 @@ export const config: GhoulConfig = {
       live: true,
     },
     {
-      id: "goo",
-      name: "GOO GHOUL",
-      domain: "https://www.ghoulverse.com/ghouls/goo/",
-      icon: "??",
-      color: "#ff00ff",
-      realm: "The Goo Dimension",
-      live: true,
-    },
-    {
       id: "party",
       name: "PARTY GHOUL",
       domain: "https://www.partyghoul.com",
