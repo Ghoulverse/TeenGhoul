@@ -1,0 +1,72 @@
+==========================================
+    GOO GHOUL WEBSITE - SIMPLE SETUP
+==========================================
+
+DON'T WORRY! This is easier than it looks.
+Just follow these 3 steps:
+
+
+STEP 1: Download Node.js (one-time install)
+-------------------------------------------
+1. Open your web browser
+2. Go to: https://nodejs.org
+3. Click the BIG GREEN "LTS" button
+4. Run the downloaded file
+5. Keep clicking "Next" until it finishes
+   (you don't need to change any settings)
+
+That's it! Node.js is now on your computer.
+
+
+STEP 2: Extract the website files
+---------------------------------
+1. Find the file named: GOOGHOUL-source-code.zip
+2. Right-click on it
+3. Click "Extract All..."
+4. Choose this folder:
+   C:\Users\Mxrti\OneDrive\Desktop\GOOGHOUL
+5. Click "Extract"
+
+You should now see a folder called GOOGHOUL on your Desktop
+with lots of files inside.
+
+
+STEP 3: Run the setup
+---------------------
+1. Open the GOOGHOUL folder on your Desktop
+2. Double-click the file named: SETUP.bat
+3. Wait a moment (it installs things automatically)
+4. Your website opens in the browser!
+
+The ghost will be there, following your mouse! 👻
+
+
+WHAT JUST HAPPENED?
+-------------------
+- You now have a live website running on your computer
+- You can edit the files and the website updates automatically
+- The website address is: http://localhost:5173
+
+
+TO STOP THE WEBSITE
+-------------------
+Just close the black window that opened (the command prompt).
+
+
+TO START THE WEBSITE AGAIN
+--------------------------
+Double-click SETUP.bat again!
+
+
+TO EDIT YOUR WEBSITE
+--------------------
+1. Download VS Code (free): https://code.visualstudio.com/
+2. Open VS Code
+3. Click File -> Open Folder
+4. Select your GOOGHOUL folder
+5. Edit any file and save - the website updates automatically!
+
+
+NEED HELP?
+----------
+Come back and ask! We're here to help.
