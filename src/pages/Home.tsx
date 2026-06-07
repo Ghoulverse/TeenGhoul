@@ -173,25 +173,29 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="reveal mb-16">
             <h2 className="font-teen text-4xl md:text-5xl text-[#e2e0e7] mb-6 leading-tight">
-              The mess is real.<br />
-              <span className="text-[#8b5cf6]">So is the fix.</span>
+              Your room is a biohazard.<br />
+              <span className="text-[#8b5cf6]">We don't care. We fix it.</span>
             </h2>
             <p className="text-[#9ca3af]/70 text-base max-w-md mx-auto leading-relaxed font-light">
-              Pizza grease. Gaming chair sebum. That thing under the bed. We don't judge — we dismantle. At the molecular level.
+              Pizza grease older than your Steam library. Gaming chair that has seen things. The smell under the bed that has a name now. No shame, no lectures — just maximum efficiency. GG.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { icon: Zap, value: '<60s', label: 'Reaction Time', color: '#8b5cf6' },
-              { icon: CircleDot, value: '99.7%', label: 'Target Precision', color: '#e879f9' },
-              { icon: Flame, value: '100%', label: 'Finish Safe', color: '#8b5cf6' },
-              { icon: Building2, value: '12', label: 'House of GHOUL', color: '#e879f9' },
+              { icon: Zap, value: '<60s', label: 'Reaction Time', color: '#8b5cf6', accent: '#22d3ee' },
+              { icon: CircleDot, value: '99.7%', label: 'Target Precision', color: '#e879f9', accent: '#8b5cf6' },
+              { icon: Flame, value: '100%', label: 'Finish Safe', color: '#22d3ee', accent: '#e879f9' },
+              { icon: Building2, value: '12', label: 'House of GHOUL', color: '#8b5cf6', accent: '#22d3ee' },
             ].map((stat, i) => (
-              <div key={i} className="reveal breathe p-10 text-center transition-all duration-700 hover:scale-[1.02]"
-                style={{ background: 'rgba(139,92,246,0.05)', borderRadius: '24px', border: '1px solid rgba(139,92,246,0.1)' }}>
-                <stat.icon className="w-6 h-6 mx-auto mb-4" style={{ color: stat.color, opacity: 0.8 }} />
-                <div className="font-teen text-3xl text-[#e2e0e7] mb-2">{stat.value}</div>
+              <div key={i} className="reveal breathe p-10 text-center hud-card transition-all duration-500 hover:scale-[1.04]"
+                style={{ animationDelay: `${i * 0.3}s` }}>
+                <div className="flex items-center justify-center gap-1 mb-3">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{ background: stat.accent, boxShadow: `0 0 6px ${stat.accent}` }} />
+                  <div className="text-[8px] tracking-[0.3em] uppercase text-[#9ca3af]/40 font-mono">STAT_0{i+1}</div>
+                </div>
+                <stat.icon className="w-6 h-6 mx-auto mb-4" style={{ color: stat.color, opacity: 0.9, filter: `drop-shadow(0 0 4px ${stat.color}40)` }} />
+                <div className="font-teen text-3xl text-[#e2e0e7] mb-2" style={{ textShadow: `0 0 12px ${stat.color}30` }}>{stat.value}</div>
                 <div className="text-[10px] tracking-[0.3em] uppercase text-[#9ca3af]/50">{stat.label}</div>
               </div>
             ))}
@@ -260,9 +264,9 @@ export default function Home() {
       <section ref={productRef} id="hangout" className="relative py-32 md:py-48 px-8 md:px-16">
         <div className="max-w-5xl mx-auto">
           <div className="reveal text-center mb-16">
-            <span className="text-[10px] tracking-[0.4em] uppercase text-[#8b5cf6]/50 mb-4 block">Product Architecture</span>
+            <span className="text-[10px] tracking-[0.4em] uppercase text-[#8b5cf6]/50 mb-4 block font-mono">LOADOUT // 09 ITEMS</span>
             <h2 className="font-teen text-4xl md:text-5xl text-[#e2e0e7] mb-3">The Hangout</h2>
-            <p className="text-[#9ca3af]/60 max-w-sm mx-auto font-light">Five lines. Nine formulations. Zero tolerance for mess.</p>
+            <p className="text-[#9ca3af]/60 max-w-sm mx-auto font-light">Nine items in your inventory. Equip wisely. Mess doesn't stand a chance.</p>
           </div>
 
           {/* Tabs */}
@@ -286,42 +290,49 @@ export default function Home() {
             })}
           </div>
 
-          {/* Product Grid */}
+          {/* Product Grid — Gaming loot cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((product, i) => {
               const Icon = PRODUCT_ICONS[i % PRODUCT_ICONS.length];
-              const colors = ['#8b5cf6', '#e879f9', '#a78bfa'];
+              const colors = ['#8b5cf6', '#e879f9', '#22d3ee'];
               const color = colors[i % colors.length];
+              const rarity = i === 0 ? 'LEGENDARY' : i < 3 ? 'EPIC' : i < 6 ? 'RARE' : 'COMMON';
 
               return (
-                <div key={i} className="reveal orb-drift group p-8 transition-all duration-700 hover:scale-[1.03] neon-border neon-border-hover"
+                <div key={i} className="reveal orb-drift group p-8 transition-all duration-500 hover:scale-[1.04] rgb-border rgb-border-hover"
                   style={{
-                    background: 'rgba(20,14,35,0.6)',
-                    borderRadius: '24px',
+                    background: 'rgba(20,14,35,0.75)',
+                    borderRadius: '4px',
                     backdropFilter: 'blur(20px)',
+                    clipPath: 'polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px))',
                   }}>
 
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-5"
-                    style={{ background: `${color}15`, border: `1px solid ${color}25` }}>
-                    <Icon className="w-6 h-6" style={{ color, opacity: 0.8 }} />
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[7px] tracking-[0.3em] uppercase font-mono" style={{ color: `${color}80` }}>{rarity}</span>
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
                   </div>
 
-                  <span className="text-[9px] tracking-[0.3em] uppercase text-[#9ca3af]/40 block mb-3">{product.category}</span>
+                  <div className="w-14 h-14 rounded-sm flex items-center justify-center mx-auto mb-5"
+                    style={{ background: `${color}12`, border: `1px solid ${color}30` }}>
+                    <Icon className="w-6 h-6" style={{ color, opacity: 0.9, filter: `drop-shadow(0 0 4px ${color}50)` }} />
+                  </div>
 
-                  <h3 className="font-teen text-lg text-[#e2e0e7] mb-2 break-words">{product.name}</h3>
+                  <span className="text-[9px] tracking-[0.3em] uppercase text-[#9ca3af]/40 block mb-3 font-mono">{product.category}</span>
+
+                  <h3 className="font-teen text-lg text-[#e2e0e7] mb-2 break-words" style={{ textShadow: `0 0 8px ${color}20` }}>{product.name}</h3>
                   <p className="text-[#e879f9]/70 text-xs mb-3">{product.tagline}</p>
                   <p className="text-[#9ca3af]/50 text-xs leading-relaxed mb-4 font-light">{product.description}</p>
 
                   {product.heroIngredient && (
                     <div className="mb-3">
-                      <span className="text-[9px] tracking-wider uppercase text-[#9ca3af]/30">Powered by </span>
-                      <span className="text-[10px] font-medium" style={{ color }}>{product.heroIngredient}</span>
+                      <span className="text-[9px] tracking-wider uppercase text-[#9ca3af]/30 font-mono">PWR:// </span>
+                      <span className="text-[10px] font-medium font-mono" style={{ color }}>{product.heroIngredient}</span>
                     </div>
                   )}
 
-                  <div className="flex items-center justify-between pt-3" style={{ borderTop: '1px solid rgba(139,92,246,0.08)' }}>
-                    <span className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af]/30">{product.volume}</span>
-                    <span className="font-teen text-sm" style={{ color }}>{product.price}</span>
+                  <div className="flex items-center justify-between pt-3" style={{ borderTop: `1px solid ${color}15` }}>
+                    <span className="text-[10px] tracking-[0.2em] uppercase text-[#9ca3af]/30 font-mono">{product.volume}</span>
+                    <span className="font-teen text-sm font-bold" style={{ color, textShadow: `0 0 8px ${color}40` }}>{product.price}</span>
                   </div>
                 </div>
               );
@@ -402,8 +413,8 @@ export default function Home() {
               <div className="w-32 h-32 rounded-full opacity-[0.05] blur-3xl" style={{ background: '#8b5cf6' }} />
             </div>
             <Gamepad2 className="w-10 h-10 text-[#8b5cf6]/60 mx-auto mb-6" />
-            <h2 className="font-teen text-3xl md:text-4xl text-[#e2e0e7] mb-4">Play GHOULVERSE</h2>
-            <p className="text-[#9ca3af]/60 max-w-sm mx-auto mb-8 font-light">Pilot {config.name} through the Void. Battle bacteria, unlock all 12 ghouls.</p>
+            <h2 className="font-teen text-3xl md:text-4xl text-[#e2e0e7] mb-4">GHOULVERSE.exe</h2>
+            <p className="text-[#9ca3af]/60 max-w-sm mx-auto mb-8 font-light">Speedrun the Void. Pwn bacteria. Unlock all 12 ghouls. World record pending.</p>
             <a href={config.gameUrl} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 font-teen text-sm tracking-wider text-[#8b5cf6] transition-all hover:scale-105"
               style={{ border: '1px solid rgba(139,92,246,0.3)', borderRadius: '9999px', boxShadow: '0 0 20px rgba(139,92,246,0.1)' }}>

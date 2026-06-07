@@ -5,6 +5,9 @@ import Home from '@/pages/Home';
 export default function App() {
   return (
     <>
+      {/* CRT scanline overlay */}
+      <div className="scanlines" />
+
       {/* Noise texture overlay */}
       <div className="noise-overlay" />
 
