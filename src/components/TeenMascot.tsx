@@ -313,7 +313,7 @@ export default function TeenMascot() {
         </div>
 
         <div
-          className="relative pointer-events-auto cursor-pointer"
+          className="relative pointer-events-none cursor-default"
           style={{
             width: mascotSize,
             height: mascotSize,
