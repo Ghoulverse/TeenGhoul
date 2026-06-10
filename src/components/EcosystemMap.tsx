@@ -10,7 +10,7 @@ export default function EcosystemMap() {
     <section className="relative py-24 md:py-32 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#a855f7] text-xs font-bold tracking-[0.3em] uppercase mb-3 block">
+          <span className="text-[#8b5cf6] text-xs font-bold tracking-[0.3em] uppercase mb-3 block">
             The House of GHOUL
           </span>
           <h2 className="font-mono text-4xl md:text-5xl text-white mb-4">
@@ -34,12 +34,12 @@ export default function EcosystemMap() {
                 rel="noopener noreferrer"
                 className={`group relative rounded-xl p-4 text-center transition-all duration-300 hover:-translate-y-1 ${
                   isCurrent
-                    ? 'border-2 border-[#a855f7] bg-[#a855f7]/10'
+                    ? 'border-2 border-[#8b5cf6] bg-[#8b5cf6]/10'
                     : 'border border-white/10 bg-white/5 hover:border-white/20'
                 }`}
               >
                 {isCurrent && (
-                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-[#a855f7] text-white">
+                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-[#8b5cf6] text-white">
                     You Are Here
                   </span>
                 )}
@@ -63,7 +63,7 @@ export default function EcosystemMap() {
             { label: 'Trademarks', value: '1', sub: 'GOO GHOUL™ accepted' },
           ].map((stat) => (
             <div key={stat.label} className="glass rounded-xl p-5 text-center">
-              <p className="font-mono text-3xl md:text-4xl text-[#a855f7] mb-1">{stat.value}</p>
+              <p className="font-mono text-3xl md:text-4xl text-[#8b5cf6] mb-1">{stat.value}</p>
               <p className="text-white text-xs font-bold tracking-wider uppercase mb-1">{stat.label}</p>
               <p className="text-[#94a3b8] text-[10px]">{stat.sub}</p>
             </div>
@@ -77,7 +77,7 @@ export default function EcosystemMap() {
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs tracking-wider uppercase text-[#0a0a1a] transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #a855f7, #06b6d4)' }}
+            style={{ background: 'linear-gradient(135deg, #8b5cf6, #e879f9)' }}
           >
             <Globe className="w-4 h-4" />
             Explore the Full Portfolio

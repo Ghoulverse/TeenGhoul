@@ -490,12 +490,12 @@ export default function Home() {
             {[Twitter, Instagram, Youtube].map((Icon, i) => {
               const colors = ['#8b5cf6', '#e879f9', '#8b5cf6'];
               return (
-                <a key={i} href="#" className="w-11 h-11 flex items-center justify-center transition-all hover:scale-110"
+                <div key={i} className="w-11 h-11 flex items-center justify-center transition-all hover:scale-110"
                   style={{ borderRadius: '50%', border: `1px solid ${colors[i]}15`, background: 'rgba(139,92,246,0.05)' }}
                   onMouseEnter={(e) => { e.currentTarget.style.borderColor = `${colors[i]}40`; }}
                   onMouseLeave={(e) => { e.currentTarget.style.borderColor = `${colors[i]}15`; }}>
                   <Icon className="w-4 h-4" style={{ color: colors[i], opacity: 0.7 }} />
-                </a>
+                </div>
               );
             })}
           </div>
@@ -515,6 +515,14 @@ export default function Home() {
               className="text-[#9ca3af]/50 hover:text-[#f59e0b] transition-colors flex items-center gap-1 py-2 px-3 min-h-11">
               <Briefcase className="w-3 h-3" /> Investors
             </a>
+          </div>
+
+          <div className="reveal mb-4 flex items-center justify-center gap-3 text-[10px] tracking-wider uppercase text-[#78716c]/30">
+            <a href="/privacy.html" className="hover:text-[#8b5cf6] transition-colors">Privacy Policy</a>
+            <span>|</span>
+            <a href="/terms.html" className="hover:text-[#8b5cf6] transition-colors">Terms of Service</a>
+            <span>|</span>
+            <a href="/cookies.html" className="hover:text-[#8b5cf6] transition-colors">Cookie Policy</a>
           </div>
 
           <p className="reveal text-[#9ca3af]/15 text-xs tracking-wider font-light">
