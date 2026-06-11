@@ -9,11 +9,11 @@ export default function InvestorCTA() {
     <section className="relative py-24 md:py-32 px-4 overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <div className="glass-glow rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">
-          <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full opacity-20 blur-[80px]" style={{ background: '#a855f7' }} />
+          <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full opacity-20 blur-[80px]" style={{ background: '#8b5cf6' }} />
           <div className="absolute -bottom-20 -right-20 w-60 h-60 rounded-full opacity-20 blur-[80px]" style={{ background: '#00f0ff' }} />
 
           <div className="relative">
-            <span className="inline-flex items-center gap-2 px-4 py-2 text-[10px] font-bold tracking-[0.4em] uppercase border border-[#a855f7]/30 text-[#a855f7] mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 text-[10px] font-bold tracking-[0.4em] uppercase border border-[#8b5cf6]/30 text-[#8b5cf6] mb-6">
               <Mail className="w-3 h-3" />
               Investor Relations
             </span>
@@ -30,13 +30,13 @@ export default function InvestorCTA() {
               <a
                 href="mailto:investors@ghoulverse.com"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bungee text-sm tracking-wider uppercase text-[#0a0a1a] transition-all hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, #a855f7, #9333ea)', boxShadow: '0 0 30px rgba(168,85,247,0.4)' }}
+                style={{ background: 'linear-gradient(135deg, #8b5cf6, #7c3aed)', boxShadow: '0 0 30px rgba(168,85,247,0.4)' }}
               >
                 <Mail className="w-4 h-4" />
                 {config.cta.buttonText}
               </a>
               <a
-                href="https://www.ghoulverse.com/investors?from=zen"
+                href="https://www.ghoulverse.com/investors?from=teen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bungee text-sm tracking-wider uppercase text-white transition-all hover:scale-105 border-2 border-[#00f0ff]/40 hover:border-[#00f0ff]"

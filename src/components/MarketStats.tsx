@@ -6,7 +6,7 @@ export default function MarketStats() {
     <section className="relative py-24 md:py-32 px-4" style={{ background: 'linear-gradient(180deg, transparent, rgba(168,85,247,0.03), transparent)' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#a855f7] text-xs font-bold tracking-[0.3em] uppercase mb-3 block">
+          <span className="text-[#8b5cf6] text-xs font-bold tracking-[0.3em] uppercase mb-3 block">
             Investor Intelligence
           </span>
           <h2 className="font-mono text-4xl md:text-5xl text-white mb-4">
@@ -20,7 +20,7 @@ export default function MarketStats() {
 
         {/* Funding Ask Hero */}
         <div className="glass-glow rounded-2xl p-8 md:p-12 text-center mb-12 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10" style={{ background: 'radial-gradient(circle at center, #a855f7, transparent 70%)' }} />
+          <div className="absolute inset-0 opacity-10" style={{ background: 'radial-gradient(circle at center, #8b5cf6, transparent 70%)' }} />
           <p className="relative text-[#94a3b8] text-xs tracking-[0.3em] uppercase mb-4">Pre-Seed Raise</p>
           <p className="relative font-mono text-5xl md:text-7xl text-white mb-2" style={{ textShadow: '0 0 40px rgba(168,85,247,0.4)' }}>
             {config.fundingAsk}
@@ -30,7 +30,7 @@ export default function MarketStats() {
           </p>
           <div className="relative flex flex-wrap justify-center gap-4 text-xs">
             <span className="px-3 py-1 rounded-full bg-[#00ff41]/10 border border-[#00ff41]/30 text-[#00ff41]">Pre-Money: {config.valuation}</span>
-            <span className="px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-[#a855f7]">Equity: {config.equityOffered}</span>
+            <span className="px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-[#8b5cf6]">Equity: {config.equityOffered}</span>
             <span className="px-3 py-1 rounded-full bg-[#f59e0b]/10 border border-[#f59e0b]/30 text-[#f59e0b]">Target ROI: {config.roiTarget}</span>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function MarketStats() {
             const statusColors = {
               complete: { bg: 'rgba(0,255,65,0.1)', border: 'rgba(0,255,65,0.3)', text: '#00ff41' },
               'in-progress': { bg: 'rgba(0,240,255,0.1)', border: 'rgba(0,240,255,0.3)', text: '#00f0ff' },
-              upcoming: { bg: 'rgba(168,85,247,0.1)', border: 'rgba(168,85,247,0.3)', text: '#a855f7' },
+              upcoming: { bg: 'rgba(168,85,247,0.1)', border: 'rgba(168,85,247,0.3)', text: '#8b5cf6' },
             };
             const s = statusColors[t.status];
             return (
@@ -64,12 +64,12 @@ export default function MarketStats() {
         {/* Revenue Projections */}
         <div className="glass rounded-2xl p-8 mb-12">
           <h3 className="font-mono text-xl text-white mb-6 flex items-center gap-2">
-            <BarChart3 className="w-5 h-5 text-[#a855f7]" />
+            <BarChart3 className="w-5 h-5 text-[#8b5cf6]" />
             Revenue Projections (Conservative)
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {config.projectedRevenue.map((rev) => (
-              <div key={rev.year} className="rounded-xl p-5 border border-[#a855f7]/20 bg-[#a855f7]/5">
+              <div key={rev.year} className="rounded-xl p-5 border border-[#8b5cf6]/20 bg-[#8b5cf6]/5">
                 <p className="text-[#94a3b8] text-xs uppercase tracking-wider mb-2">{rev.year}</p>
                 <p className="font-mono text-3xl text-white mb-3">{rev.amount}</p>
                 <p className="text-[#94a3b8] text-xs leading-relaxed">{rev.sources}</p>
@@ -109,7 +109,7 @@ export default function MarketStats() {
           <a
             href="mailto:investors@ghoulverse.com"
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl font-mono text-sm tracking-wider uppercase text-[#0a0a1a] transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #a855f7, #00f0ff)', boxShadow: '0 0 30px rgba(168,85,247,0.3)' }}
+            style={{ background: 'linear-gradient(135deg, #8b5cf6, #00f0ff)', boxShadow: '0 0 30px rgba(168,85,247,0.3)' }}
           >
             <TrendingUp className="w-4 h-4" />
             Request the Full Investor Deck
