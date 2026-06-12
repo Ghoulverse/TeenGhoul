@@ -70,8 +70,7 @@ export const config: GhoulConfig = {
   id: "teen",
   name: "TEEN GHOUL",
   tagline: "Attitude & Altitude",
-  description:
-    "TEEN GHOUL gets it. The room is a disaster, the bathroom is a biohazard, and someone definitely spilled something on the couch. TEEN GHOUL approaches adolescent mess with zero judgment and maximum efficiency.",
+  description: "The teen lifestyle vertical — grooming, room culture, study accessories, and self-expression without judgment.",
   domain: "https://www.teenghoul.com",
   icon: "🎧",
   isLeader: false,
@@ -278,7 +277,7 @@ export const config: GhoulConfig = {
     },
     {
       id: "scholar",
-      name: "SCHOLAR GHOUL",
+      name: "BOOK GHOUL",
       domain: "https://www.ghoulverse.com/ghouls/scholar/",
       icon: "📚",
       color: "#f97316",
@@ -304,7 +303,7 @@ export const config: GhoulConfig = {
     title: "The Science",
     subtitle: "Nano-Zyme Amplifiers™",
     description: "Every TEEN GHOUL product deploys Nano-Zyme Amplifiers™ – microscopic enzymatic clusters that identify and dismantle specific organic compounds at the molecular level. Grease from pizza? Sebum on a gaming chair? These nano-enzymes seek, bind, and destroy – without stripping finishes or leaving residue behind.",
-    adaptation: "For The Hangout, we engineered fast-acting variants that work in under 60 seconds. Because teens don't wait. Neither should their cleaning products.",
+    adaptation: "For the Hangout, we focus on non-irritating, straightforward formulations that fit into busy routines and sensitive spaces without overcomplicating self-care.",
     stats: [
       { label: "Reaction Time", value: "<60s" },
       { label: "Target Precision", value: "99.7%" },
@@ -333,7 +332,7 @@ export const config: GhoulConfig = {
     { phase: "Phase 2", title: "Mascot Creation", items: ["24 professional mascots (2 per ghoul)", "$120K investment across 12 characters"], status: "upcoming" },
     { phase: "Phase 3", title: "Partnerships & Revenue", items: ["Sector sponsorships", "Affiliate deals", "Event appearances", "Influencer recruitment"], status: "upcoming" },
     { phase: "Phase 4", title: "Entertainment Scale", items: ["Animated series pilot", "Convention circuit", "Merchandise licensing"], status: "upcoming" },
-    { phase: "Phase 5", title: "Product Launch", items: ["GOO GHOUL household cleaners", "Vertical-specific product lines"], status: "upcoming" },
+    { phase: "Phase 5", title: "Product Launch", items: ["GOO GHOUL flagship household line", "Vertical-specific owned product lines"], status: "upcoming" },
   ],
 
   fundingAsk: "$250,000 AUD",
@@ -358,6 +357,6 @@ export const config: GhoulConfig = {
     { stream: "Licensing", description: "Character IP licensing to brands", timeline: "Year 2" },
     { stream: "Merchandise", description: "Royalties on plush, apparel, accessories", timeline: "Year 2" },
     { stream: "Animation", description: "YouTube/streaming ad revenue, distribution deals", timeline: "Year 2" },
-    { stream: "Products", description: "Owned product lines (GOO GHOUL cleaners first)", timeline: "Year 3" },
+    { stream: "Products", description: "Owned product lines launched per vertical, starting with GOO GHOUL", timeline: "Year 3" },
   ],
 };

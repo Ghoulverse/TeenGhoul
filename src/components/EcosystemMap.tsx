@@ -17,7 +17,7 @@ export default function EcosystemMap() {
             You Are Looking at 1 of 12
           </h2>
           <p className="text-[#94a3b8] max-w-2xl mx-auto text-lg">
-            The House of GHOUL is a portfolio of specialised cleaning brands, each owning a 
+            The House of GHOUL is a portfolio of specialised consumer brands, each owning a 
             distinct market vertical — unified under one universe, one game, and one investment thesis.
           </p>
         </div>

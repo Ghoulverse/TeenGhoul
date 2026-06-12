@@ -414,7 +414,7 @@ export default function Home() {
             </div>
             <Gamepad2 className="w-10 h-10 text-[#8b5cf6]/60 mx-auto mb-6" />
             <h2 className="font-teen text-3xl md:text-4xl text-[#e2e0e7] mb-4">GHOULVERSE.exe</h2>
-            <p className="text-[#9ca3af]/60 max-w-sm mx-auto mb-8 font-light">Speedrun the Void. Pwn bacteria. Unlock all 12 ghouls. World record pending.</p>
+            <p className="text-[#9ca3af]/60 max-w-sm mx-auto mb-8 font-light">Speedrun the Void. Beat your high score. Unlock all 12 ghouls. World record pending.</p>
             <a href={config.gameUrl} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 font-teen text-sm tracking-wider text-[#8b5cf6] transition-all hover:scale-105"
               style={{ border: '1px solid rgba(139,92,246,0.3)', borderRadius: '9999px', boxShadow: '0 0 20px rgba(139,92,246,0.1)' }}>
